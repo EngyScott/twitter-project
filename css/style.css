@@ -1,6 +1,5 @@
 
-
-
+/***************************** MY STYLES ********************************/
 
 
 
@@ -23,6 +22,7 @@ nav.sticky-top{
     color: rgb(199, 197, 197);
     padding: 0 1rem;
     line-height: 3rem;
+    background-color: transparent;
 }
         /* NAVBAR LINK HOVER */
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
@@ -102,6 +102,38 @@ img.w-100{
     background-color: #e41b17;
 }
 
+/*********** SECTION ABOUT **********************/
+section.about{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+section.about>div>h1{
+    font-weight: 700;
+}
+section.about>div>h1>span.special{
+    font-family: 'Josefin Sans', sans-serif;
+}
+section.about>div>h1 span.red{
+    color: rgb(228, 27, 23);
+}
+
+/******************* SECTION FEATURES ***************/
+.features{
+    background-color: #eee;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.features .feat p{
+    line-height: 1.5em;
+}
+.features .feat>span>svg.bi{
+    font-size: 2rem;
+    color: rgb(228, 27, 23);
+    margin: .5rem;
+}
+
 
 
 /************** MEDIA QUERY *****************/
@@ -143,9 +175,20 @@ img.w-100{
         font-size: 1.25rem;
         line-height: 0.8;
     }
+    section.about>div>h1{
+        font-size: 2rem;
+    }
 }
 
 @media only screen and (max-width: 576px) {
+    .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link .dropdown-menu .dropdown-item{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .navbar-dark .navbar-nav .nav-link .dropdown-menu .dropdown-item{
+        font-weight: 300;
+    }
+
     img.w-100{
         height: 30vh;
     }
@@ -163,6 +206,38 @@ img.w-100{
     }
     #logo{
         width: 4rem;
+    }
+    /**about section**/
+    section.about{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    section.about>div>h1{
+        font-size: 1.5rem;
+    }
+    .lead {
+        font-size: 1rem;
+    }
+
+    /**features section**/
+    .features{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .features .feat p{
+        font-size: 0.9rem;
+        line-height: 1.5em;
+    }
+    .features .feat>span>svg.bi{
+        font-size: 1.5rem;
+    }
+    .features h3{
+        font-size: 1.5rem;
+    }
+    .features .feat>h5{
+        font-size: 1.1rem;
     }
 }
 
