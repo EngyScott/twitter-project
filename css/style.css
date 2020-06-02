@@ -125,6 +125,16 @@ section.about>div>h1 span.red{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
+.features h2{
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+div.feat{
+    margin-bottom: 2em;
+}
+.features .feat>h5{
+    font-style: italic;
+}
 .features .feat p{
     line-height: 1.5em;
 }
@@ -134,7 +144,41 @@ section.about>div>h1 span.red{
     margin: .5rem;
 }
 
+/****************** SECTION TESTIMONIALS **************/
+.testimonials{
+    padding: 2em;
+}
+#testimonialsCarousel{
+    max-width: 90vw;
+}
+section.testimonials>h2{
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
 
+#testimonialsCarousel{
+    height:25vh;
+}
+.carousel-inner {
+    height: 100%;
+}
+.carousel-inner>div{
+    height: 100%;
+}
+.blockquote {
+    font-size: 80%;
+}
+.blockquote-footer {
+    font-size: .8rem;
+}
+.media-body>h5{
+    font-style: italic;
+}
+
+.inactive{
+    display: none;
+}
 
 /************** MEDIA QUERY *****************/
 @media only screen and (max-width: 992px) {
@@ -177,6 +221,9 @@ section.about>div>h1 span.red{
     }
     section.about>div>h1{
         font-size: 2rem;
+    }
+    .hide-lg{
+        display:none;
     }
 }
 
@@ -233,12 +280,18 @@ section.about>div>h1 span.red{
     .features .feat>span>svg.bi{
         font-size: 1.5rem;
     }
-    .features h3{
+    .features h2{
         font-size: 1.5rem;
     }
     .features .feat>h5{
         font-size: 1.1rem;
     }
+
+    .media-body>h5{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+   
 }
 
 
