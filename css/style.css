@@ -81,7 +81,7 @@ a.dropdown-item:hover, a.dropdown-item:focus{
 }
 
 .carousel-inner>div{
-    display: flex;
+    /* display: flex; */
     height: 80vh;
     justify-content: center;
     align-content: center;
@@ -158,7 +158,10 @@ section.testimonials>h2{
 }
 
 #testimonialsCarousel{
-    height:25vh;
+    background-color: #343a40;
+    color: rgb(199, 197, 197);
+    border-radius: 5px;
+    padding: 1rem;
 }
 .carousel-inner {
     height: 100%;
@@ -175,12 +178,12 @@ section.testimonials>h2{
 .media-body>h5{
     font-style: italic;
 }
-
-.inactive{
-    display: none;
-}
+/* div.media{
+    padding: 1rem;
+} */
 
 /************** MEDIA QUERY *****************/
+
 @media only screen and (max-width: 992px) {
     img.w-100{
         height: 60vh;
@@ -286,12 +289,13 @@ section.testimonials>h2{
     .features .feat>h5{
         font-size: 1.1rem;
     }
-
-    .media-body>h5{
-        font-size: 1rem;
-        font-weight: 300;
+    .blockquote{
+        line-height: normal;
     }
-   
+    
+    #testimonialsCarousel{
+        padding: .5rem 1rem .5rem .5rem;
+    }
 }
 
 
