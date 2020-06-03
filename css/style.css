@@ -80,17 +80,12 @@ a.dropdown-item:hover, a.dropdown-item:focus{
 
 #main-Slide{
     max-height: 80vh;
-    /* display: flex; */
-    /* justify-content: center;
-    align-content: center; */
 }
 
 .carousel-inner>div{
-    /* display: flex; */
     height: 80vh;
     justify-content: center;
     align-content: center;
-    /* transition: ease 0.05s; */
 }
 img.w-100{
     height: 90%;
@@ -184,15 +179,33 @@ section.testimonials>h2{
  /*********** PRICES SECTION *****************/
  section.price-table{
      background-image: url("../images/plan.jpg");
-      background-size: cover;
+     background-size: contain;
+      /* background-size: cover; */
       /* opacity: 0.5; */
       margin: 0;
       padding: 2rem 0;
  }
 
- /* .price-table div.container{
-     opacity: 1;
- } */
+ section.price-table .bg{
+    background: url("../images/plan.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    width: 100%;
+    height: 100%;
+}
+section.price-table .price-box{
+    background-color: rgb(230, 230, 0);
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
  .price-table h2{
     margin: 0 2rem 1rem;
  }
@@ -200,13 +213,16 @@ section.testimonials>h2{
     background-color: rgb(230, 230, 0);
     border-radius: 15px;
     font-weight: 700;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     color: rgb(52, 58, 64);
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
  }
  .price-table .price-box p{
     font-size: 1.5rem;
     font-weight: 500;
+ }
+ .price-table ul.list-unstyled{
+     margin-bottom: .5rem;
  }
 
 /************** MEDIA QUERY *****************/
@@ -234,7 +250,13 @@ section.testimonials>h2{
     section.testimonials>h2{
         line-height: 1;
     }
-    
+    .show-lg{
+        display:none;
+    }
+
+    .price-table h5{
+        padding: 0.5rem;
+     }
 }
 
 @media only screen and (max-width: 768px){
@@ -265,9 +287,7 @@ section.testimonials>h2{
     .features h2{
         margin-bottom: 1rem;
     }
-    .show-lg{
-        display:none;
-    }
+    
     section.testimonials>h2{
         font-size: 3rem;
         margin-bottom: 1.5rem;
@@ -281,6 +301,15 @@ section.testimonials>h2{
     .blockquote p{
         margin-bottom: 0.5rem;
     }
+
+    .price-table h5{
+        font-size: 1.25rem;
+    }
+    .price-table .price-box p {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem !important;
+    }
+           
 }
 
 @media only screen and (max-width: 576px) {
@@ -352,6 +381,7 @@ section.testimonials>h2{
     section.testimonials>h2{
         margin-bottom: 1.25rem;
     }
+    
 }
 
 
