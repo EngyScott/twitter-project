@@ -1,7 +1,7 @@
 (function($){
     
     $('#testimonialsCarousel').carousel({
-        interval: 10000
+        interval: 100000
     })
 })(jQuery);
 
