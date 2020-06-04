@@ -202,6 +202,10 @@ section.price-table .price-box{
     border-radius: 10px;
     padding: 0.5rem;
     margin-bottom: 1rem;
+    transition: 1s;
+}
+.price-box:hover{
+    transform: scale(1.2);
 }
  .price-table h2{
     margin: 0 2rem 1rem;
@@ -314,7 +318,7 @@ section.price-table .price-box{
         margin-top: 0.5rem;
         padding: 1rem 0;
         position: relative;
- }
+    }
           
 }
 
