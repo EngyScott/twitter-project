@@ -1,5 +1,8 @@
 
 /***************************** MY STYLES ********************************/
+h1{
+    text-transform: capitalize;
+}
 h2{
     font-family: 'Dancing Script', cursive;
     font-size: 4rem;
@@ -18,6 +21,10 @@ span.red{
 
 
 /*************************** START OVERRIDING FONTAWESOME ***********************/
+.fa-fw.svg-inline--fa {
+    width: 1em;
+}
+
 .fa-facebook {
     color: rgb(59, 91, 152);
   }
@@ -30,8 +37,8 @@ span.red{
 .fa-google-plus{
     color: rgb(219,74,57)
 }
-span.fab:hover, span.fab:focus{
-    transform: scale(1.1);
+.fa-sort-up{
+    font-size: 1.5rem;
 }
 /*************************** START OVERRIDING BOOTSTRAP ***********************/
 
@@ -200,7 +207,6 @@ section.testimonials>h2{
  /*********** PRICES SECTION *****************/
  section.price-table{
     margin: 0;
-    padding: 2rem 0;
     position: relative;
  }
 
@@ -211,6 +217,10 @@ section.testimonials>h2{
     z-index: -1;   
     width: 100%;
     height: 100%;
+}
+section.price-table .container{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 section.price-table .price-box{
     background-color: rgb(230, 230, 0);
@@ -229,7 +239,7 @@ section.price-table .price-box{
     -moz-transform: scale(1.2);
 }
 .price-table h2{
-margin: 0 2rem 1rem;
+margin:  2rem;
 }
 .price-table h5{
 background-color: rgb(230, 230, 0);
@@ -256,8 +266,8 @@ section.our-team{
     background: url("../images/team.jpg") no-repeat center center fixed;
     width: 100%;
     background-size: cover;
-    position: absolute;
-    z-index: -1;   
+    position: relative;
+    z-index: -1; 
 }
 .our-team .team{
     background-color: rgba(230, 255, 255,0.7);
@@ -281,11 +291,32 @@ section.our-team{
     line-height: 1.2;
     font-style: italic;
 }
+.our-team .team .person a:hover{
+    transform: scale(1.1);
+}
 
 /************** SECTION SUBSCRIBE ***************/
 .subscribe{
     background-color: #eee;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
 }
+.subscribe h1{
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.subscribe .form-control{
+    border-radius: 0;
+}
+.subscribe .btn-danger{
+    border-radius: 0;
+}
+/* .subscribe .form-inline{
+    margin-left: 15%;
+    margin-right: 15%;
+} */
 /************** MEDIA QUERY *****************/
 
 @media only screen and (max-width: 992px) {
