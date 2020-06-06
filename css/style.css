@@ -5,7 +5,7 @@ h1{
 }
 h2{
     font-family: 'Dancing Script', cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: capitalize;
     color:rgb(0, 0, 51);
 }
@@ -250,12 +250,12 @@ color: rgb(52, 58, 64);
 }
 .price-table a{
     text-decoration: none;
-    color: rgb(0, 82, 204)
+    color: rgb(0, 0, 0)
 }
 .price-table .price-box p{
 font-size: 1.5rem;
 font-weight: 500;
-text-shadow: 2px 2px rgb(255, 255, 77);
+text-shadow: 2px 1px rgb(255, 255, 77);
 }
 .price-table ul.list-unstyled{
     margin-bottom: .5rem;
@@ -266,14 +266,17 @@ section.our-team{
     background: url("../images/team.jpg") no-repeat center center fixed;
     width: 100%;
     background-size: cover;
-    position: relative;
-    z-index: -1; 
+    position: relative; 
 }
 .our-team .team{
     background-color: rgba(230, 255, 255,0.7);
     height: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+.our-team .team .container{
+    padding-top: 1rem;
+    padding-bottom: .5rem;
 }
 .our-team .team h2{
     margin-bottom: 1rem;
@@ -282,7 +285,7 @@ section.our-team{
     margin-bottom: 1rem;
 }
 .team img{
-    width: 170px;
+    width: 7rem;
 }
 .team h5{
     color: rgb(0, 0, 51);
@@ -291,7 +294,7 @@ section.our-team{
     line-height: 1.2;
     font-style: italic;
 }
-.our-team .team .person a:hover{
+.our-team .team .person a span.fab:hover, .our-team .team .person a span.fab:focus{
     transform: scale(1.1);
 }
 
@@ -300,7 +303,7 @@ section.our-team{
     background-color: #eee;
     padding-top: 2rem;
     padding-bottom: 2rem;
-
+    /* margin-bottom: 5rem; */
 }
 .subscribe h1{
     letter-spacing: 1px;
@@ -309,14 +312,107 @@ section.our-team{
 }
 .subscribe .form-control{
     border-radius: 0;
+    width: auto;
+    min-width: 300px;
 }
 .subscribe .btn-danger{
     border-radius: 0;
 }
-/* .subscribe .form-inline{
-    margin-left: 15%;
-    margin-right: 15%;
-} */
+.subscribe .form-inline{
+    justify-content:center;
+}
+
+/************** SECTION STATICS ***************/
+
+section.statics {
+    background: url("../images/static.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+section.statics .data{
+    background-color: rgba(52, 58, 64,0.5);
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: rgb(191, 191, 191);
+}
+.statics .col-lg-3{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+section.statics h2{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: rgb(255, 217, 255);
+}
+.statics .row{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.statics p{
+    margin-top: .5rem;
+    margin-bottom: .25rem;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.statics .stats{
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+.statics .stats:hover{
+    color: rgb(255, 217, 255);
+}
+
+/************** SECTION SKILLS ***************/
+section.skills{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+section.skills h2{
+    margin-bottom: 2rem;
+}
+section.skills .progress{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+section.skills .progress .progress-bar{
+    text-align: left;
+    text-indent: 1rem;
+}
+
+/************** SECTION CONTACT US ***************/
+
+section.contact-us{
+    background: url("../images/contact.jpg") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+.contact-us .info{
+    background-color: rgba(9, 9, 9, 0.8);
+    width: 100%;
+    height: 100%;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: #ddd;
+}
+.contact-us h2{
+    color: #ddd;
+    margin-bottom: 2rem;
+}
+
+textarea.form-control {
+    height: 9rem;
+}
+
 /************** MEDIA QUERY *****************/
 
 @media only screen and (max-width: 992px) {
@@ -350,6 +446,11 @@ section.our-team{
      }
      .price-box:hover{
         transform: none;
+    }
+
+    .statics p{
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
     }
 }
 
@@ -493,7 +594,19 @@ section.our-team{
     section.our-team .person{
         margin: 1rem;
     }
-    
+    .subscribe .form-control{
+        min-width: 250px;
+    }
+    .subscribe h1{
+        letter-spacing: normal;
+        font-size: 1.5rem;
+    }
+    .statics p {
+        font-size: 1.25rem;
+    }
+    section.statics .data{
+        color: rgb(255,217,255)
+    }
 }
 
 
